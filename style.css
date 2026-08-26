@@ -12,12 +12,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
-    background: linear-gradient(135deg, #667eea, #764ba2, #6a11cb);
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #667eea, #764ba2, #4facfe);
     color: #ffffff;
 }
 
-/* กล่องหลัก */
 .container {
     width: 100%;
     max-width: 700px;
@@ -30,19 +29,16 @@ body {
 
     border: 1px solid rgba(255, 255, 255, 0.25);
 
-    box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
 
     transition: 0.3s ease;
 }
 
 .container:hover {
     transform: translateY(-5px);
-    box-shadow:
-        0 30px 60px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
 }
 
-/* หัวข้อ */
 h1 {
     text-align: center;
     font-size: 42px;
@@ -51,18 +47,20 @@ h1 {
     letter-spacing: 1px;
 }
 
-/* กล่องข้อมูล */
 .profile-item {
     padding: 20px 25px;
     margin-bottom: 18px;
 
     background: rgba(255, 255, 255, 0.12);
-
     border-radius: 16px;
 
     border-left: 5px solid #ffffff;
 
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.profile-item:last-child {
+    margin-bottom: 0;
 }
 
 .profile-item:hover {
@@ -70,22 +68,20 @@ h1 {
     transform: translateX(8px);
 }
 
-/* หัวข้อข้อมูล */
 h2 {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 5px;
-
     color: #e9e6ff;
 }
 
-/* ข้อมูล */
 p {
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 400;
+    color: #ffffff;
 }
 
-/* Responsive สำหรับมือถือ */
+/* สำหรับมือถือ */
 @media (max-width: 600px) {
 
     body {
@@ -94,14 +90,19 @@ p {
 
     .container {
         padding: 30px 20px;
+        border-radius: 20px;
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 32px;
+    }
+
+    .profile-item {
+        padding: 18px 20px;
     }
 
     h2 {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     p {
